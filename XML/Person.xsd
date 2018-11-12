@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/Person" 
+xmlns:ns="http://www.example.org/Person" elementFormDefault="unqualified">
+
+<simpleType name="age">
+	<restriction base="string">
+		<maxLength value="20"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="firstName">
+	<restriction base="string">
+		<maxLength value="40"/>
+	</restriction>
+</simpleType>
+
+<simpleType name="lastName">
+	<restriction base="string">
+		<maxLength value="40"/>
+	</restriction>
+</simpleType>
+
+
+<element name="firstName" type="ns:firstName"/>
+<element name="lastName" type="ns:lastName"/>
+<element name="age" type="ns:age"/>
+
+<element name="Person_Structure" type="ns:Person_Type"/>
+
+<complexType name="Person_Type">
+	<sequence>
+		<element ref="ns:firstName"/>
+		<element ref="ns:lastName"/>
+		<element ref="ns:age"></element>
+	</sequence>
+</complexType>
+
+</schema>

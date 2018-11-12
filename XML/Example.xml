@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:Person_Structure xmlns:ns="http://www.example.org/Person" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.example.org/Person Person.xsd ">
+  <ns:firstName>3432</ns:firstName>
+  <ns:lastName>65748392</ns:lastName>
+  <ns:age>57483920</ns:age>
+</ns:Person_Structure>
